@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ParfumEcommerce.Models.Parfum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <h1>Parfums</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Ajouter un parfum</a>
+    </p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Parfum</th>
+                <th>Prix</th>
+                <th>Image</th>
+                <th>Catégorie</th>
+                <th></th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ParfumName</td>
+                    <td>@item.Prix €</td>
+                    <td><img src="img/@item.Image" alt="@item.ParfumName" class="img-thumbnail" width="30px" height="30px"></td>
+                    <td>@item.Categorie?.CategoryName</td>
+                    <td>
+                        <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                            <input type="hidden" name="productId" value="@item.ID" />
+                            <button type="submit" class="btn btn-success">Add to Cart</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-primary">Modifier</a>
+                        <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-sm btn-info">Détails</a>
+                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-danger">Supprimer</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+

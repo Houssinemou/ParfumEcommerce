@@ -1,0 +1,46 @@
+﻿@model ParfumEcommerce.Models.ShoppingCart
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h1 class="cart-title">Shopping Cart</h1>
+
+<div class="cart-container">
+    @if (Model != null && Model.ShoppingCartItems.Any())
+    {
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ShoppingCartItems)
+                {
+                    <tr>
+                        <td>@item.Parfum.ParfumName</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Parfum.Prix</td>
+                        <td>@(item.Quantity * item.Parfum.Prix)</td>
+                     
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p class="empty-cart-message">Your shopping cart is empty.</p>
+    }
+    <td>
+        <form asp-action="ClearCart" asp-controller="Cart" method="post">
+            <input type="submit" value="Clear Cart" />
+        </form>
+    </td>
+  
+</div>

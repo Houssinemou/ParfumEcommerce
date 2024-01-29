@@ -1,0 +1,163 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: black;
+    padding-top: 56px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+section {
+    text-align: center;
+    padding: 2em;
+    background-color: black;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+.imageGrande {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 5em 1em;
+    position: relative;
+   
+}
+    .imageGrande img {
+        width: 115%; /* Make the image cover the entire header */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px;
+        margin: -97px;
+        object-fit: cover;
+    }
+
+.perfume-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+    .perfume-images img {
+        max-width: 300px;
+        margin: 1em;
+        border-radius: 8px;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.big-text {
+    font-size: 70px; /* Ajustez la taille de police selon vos besoins */
+    font-weight: bold; /* Optionnel : applique une épaisseur de police plus importante */
+}
+/* Ajoutez vos styles ici */
+.cart-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .cart-table th, .cart-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+.btn-remove {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-clear-cart {
+    background-color: #5bc0de;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.empty-cart-message {
+    font-style: italic;
+    color: #888;
+}
+
+/* styles */
+
+.banner {
+    background: url(banner.jpg);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+}
+/* Ajoutez ces styles dans votre fichier ParfumEcommerce.styles.css */
+
+
+
+.navbar {
+    background-color: #343a40;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #f8f9fa; /* Change la couleur au survol */
+    }
+
+
+
+/* Personnalisez davantage selon vos besoins */

@@ -1,0 +1,67 @@
+﻿@model ParfumEcommerce.Models.Parfum
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div class="main-container">
+    <nav aria-label="breadcrumb" role="navigation" class="bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="big-text">@Model.ParfumName</span>
+                        </li>
+                    </ol>
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </nav>
+</div>
+
+
+    <section class="bg-white space-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mb-4 mb-sm-0">
+                    <img alt="Image" src="~/img/@Model.Image" class="rounded img-fluid" />
+                </div>
+                <!--end of col-->
+                <div class="col-lg-4 d-flex flex-column justify-content-between mr-auto ml-auto">
+                    <div>
+                        <h1 class="mb-2">@Model.ParfumName</h1>
+                        <p > @Model.Categorie.Description</p>
+                        
+                        <div>
+                            <span class="badge badge-secondary mr-3">@Model.Categorie.CategoryName</span>
+                        </div>
+                        <div>
+                            <ul class="list-inline text-small d-inline-block mb-3">
+                                <li class="list-inline-item"><i class="icon-thumbs-up"></i> @Model.Prix</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="btn-group mb-2">
+                            <button type="button" class="btn btn-success btn-lg">Acheter</button>
+                           
+                            
+                           
+                         
+                        </div>
+                    </div>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    

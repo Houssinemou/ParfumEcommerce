@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParfumEcommerce - Accueil</title>
+    
+     
+</head>
+
+<body>
+   
+    <header>
+        <div class="imageGrande">
+            <img src="img/image.jpg">
+        </div>
+    </header>
+
+
+    <section>
+        <h2>Découvrez nos parfums</h2>
+        <p>Parcourez notre sélection raffinée de parfums de haute qualité.</p>
+
+       
+    </section>
+    <div class="album py-5 --bs-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/sauvage-dior.jpg" alt="Sauvage">
+                        <div class="card-body">
+                       
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <form asp-action="AddToCart" asp-controller="Cart" method="post">
+                                        <button type="submit">Add to Cart</button>
+                                    </form>
+                                </div>
+                                <small class="text-muted"> 500 DH</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/azzaro-the-most-wanted-eau-de-parfum-intense.jpg" alt="Azzaro">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted"> 750 DH</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/lacoste-l-12-12-blanc-intense.jpg" alt="Lacoste">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">600 DH</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/1.jpg" alt="Jean Paul">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">0 DH</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/stronger-with-you-amber.jpg" alt="Stronger With You Amber Armani">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">650 DH</small>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                   
+               
+            </div>
+        </div>
+    
+    </div>
+
+    
+</body>
+
+</html>
